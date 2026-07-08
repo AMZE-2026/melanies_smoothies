@@ -14,7 +14,7 @@ st.write("The name on you Smoothie will be:", name_on_order)
 
 #session = get_active_session() ==> only applies for SIS, replaced by the next 2 lines for SNIS
 cnx = st.connection("snowflake")
-session = cns.session()
+session = cnx.session()
 
 
 my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT_NAME'))
