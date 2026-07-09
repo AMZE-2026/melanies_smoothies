@@ -10,3 +10,4 @@
 # for SNIS
 snowflake-snowpark-python
 streamlit
+requests
